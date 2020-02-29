@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+
+const StyledImg = styled.img`
+width: 50vw;
+justify-content: center;
+`
+
+const StyledDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <StyledDiv>
+      <header>
+        <StyledImg alt='ishit logo' src='https://res.cloudinary.com/dpfixnpii/image/upload/v1583009496/FrontPage_skexy6.png' />
+    
       </header>
-    </div>
+    </StyledDiv>
   );
 }
 
