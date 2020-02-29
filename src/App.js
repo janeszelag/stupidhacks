@@ -1,26 +1,58 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "react-bootstrap/Nav";
 
 const StyledImg = styled.img`
-width: 50vw;
-justify-content: center;
-`
+  width: 50vw;
+  justify-content: center;
+`;
 
 const StyledDiv = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
+const StyledDiv2 = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Quote = styled.p`
+  font-size: large;
+  padding: 2em;
+  font-style: italic;
+`;
+
+const StyledNav = styled(Nav)`
+background-color: #f2f2f2;
+padding: 1em;
+font-size: large;
+font-weight: bold; 
 `
 
 function App() {
   return (
-    <StyledDiv>
-      <header>
-        <StyledImg alt='ishit logo' src='https://res.cloudinary.com/dpfixnpii/image/upload/v1583009496/FrontPage_skexy6.png' />
-    
-      </header>
-    </StyledDiv>
+    <div>
+      <StyledNav defaultActiveKey="/"  >
+        <Nav.Item >
+          iShit
+        </Nav.Item>
+      </StyledNav>
+      <StyledDiv>
+        <StyledImg
+          alt="ishit logo"
+          src="https://res.cloudinary.com/dpfixnpii/image/upload/v1583009496/FrontPage_skexy6.png"
+        />
+        <Quote>
+          "I have learned more from the iShit than any other product I own." -
+          Elon Musk
+        </Quote>
+        <iframe title="video" width="900" height="600" src="https://www.youtube.com/embed/W6lY4UkXRBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </StyledDiv>
+      <StyledDiv2></StyledDiv2>
+    </div>
   );
 }
 
