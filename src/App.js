@@ -13,12 +13,10 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4em;
 `;
 
-const StyledDiv2 = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+
 
 const Quote = styled.p`
   font-size: large;
@@ -56,7 +54,7 @@ function App() {
         />
         <iframe title="ishit "width="900" height="600" src="https://www.youtube.com/embed/TvcrFymy0kQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </StyledDiv>
-      <StyledDiv2></StyledDiv2>
+   
     </div>
   );
 }
