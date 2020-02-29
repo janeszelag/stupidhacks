@@ -49,6 +49,10 @@ function App() {
           "I have learned more from the iShit than any other product I own." -
           Elon Musk
         </Quote>
+        <StyledImg
+          alt="ishit phone"
+          src="https://res.cloudinary.com/dpfixnpii/image/upload/v1583016478/Cool_Text_-_1-800-iShit4k_350651155734935_h91by9.png"
+        />
         <iframe title="video" width="900" height="600" src="https://www.youtube.com/embed/W6lY4UkXRBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </StyledDiv>
       <StyledDiv2></StyledDiv2>
